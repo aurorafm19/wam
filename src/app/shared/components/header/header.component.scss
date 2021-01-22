@@ -1,3 +1,5 @@
+@import '../../../../theme/custom.scss';
+
 .header {
   height: 70px;
   background-color: white;
@@ -5,4 +7,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 154px;
+
+  @include screen-tablet {
+    padding: 0 30px;
+  }
+
+  @include screen-mobile {
+    padding: 0 16px;
+  }
 }

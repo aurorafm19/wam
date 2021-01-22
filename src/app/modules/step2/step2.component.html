@@ -1,0 +1,26 @@
+<mat-card custom-palette>
+  <mat-card-header>
+    <div class="title pb-s">{{'STEP2.TITLE' | translate}}</div>
+    <div class="subtitle pb-l">{{'STEP2.SUBTITLE' | translate}}</div>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="card-section">
+      <img class="pb-sm" src="assets/images/credit-card.svg" alt="card">
+      <div class="card-section__title">{{'STEP2.CARD_SECTION.TITLE' | translate}}</div>
+      <div class="card-section__subtitle pt-s pb-s">{{'STEP2.CARD_SECTION.SUBTITLE' | translate}}</div>
+      <img src="assets/images/logo-cards.svg" alt="logos">
+    </div>
+  </mat-card-content>
+
+  <div>
+    <button class="button-previous" (click)="onBack()" id="#back">
+      {{'STEP2.PREVIOUS_BUTTON' | translate}}
+      <img src="assets/images/previous-arrow.svg" alt=next>
+    </button>
+    <button mat-flat-button class="button-next" (click)="onPayment()" id="next">
+      {{'STEP2.PAYMENT_BUTTON' | translate}}
+      <img src="assets/images/next-arrow.svg" alt=next>
+    </button>
+  </div>
+ </mat-card>

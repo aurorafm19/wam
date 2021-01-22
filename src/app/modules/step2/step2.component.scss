@@ -1,0 +1,21 @@
+.card-section {
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  padding: 33px 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 42px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+}

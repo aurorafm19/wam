@@ -17,13 +17,11 @@ describe('Step1Component', () => {
     TestBed.configureTestingModule({
       declarations: [Step1Component],
       imports: [
-        SharedModule,
         ReactiveFormsModule,
         CommonModule,
         AppModule
       ],
       providers: [
-        // reference the new instance of formBuilder from above
         { provide: FormBuilder, useValue: formBuilder }
       ]
     })
