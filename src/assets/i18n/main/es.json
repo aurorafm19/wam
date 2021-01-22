@@ -1,0 +1,14 @@
+{
+  "MAIN": {
+    "HEADER": {
+      "HELP": "Ayuda",
+      "SIGN_IN": "Sign_in",
+      "LAN_SELECTOR": {
+        "ES": "es"
+      }
+    },
+    "FOOTER": {
+      "TEXT": "2020 © We Are Marketing"
+    }
+  }
+}
