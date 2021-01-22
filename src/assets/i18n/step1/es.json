@@ -1,0 +1,8 @@
+{
+  "STEP1": {
+    "TITLE": "Mis datos",
+    "SUBTITLE": "Revisa los datos y completa aquellos pendientes antes de continuar con el proceso.",
+    "NAME_LABEL": "Nombre",
+    "LASTNAME_LABEL": "Apellidos"
+  }
+}

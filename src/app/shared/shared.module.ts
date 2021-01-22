@@ -3,6 +3,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CoreModule } from '../core/core.module';
 import { MaterialModule } from './material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,11 +13,14 @@ import { MaterialModule } from './material.module';
   ],
   imports: [
     CoreModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,34 @@
+<mat-card custom-palette>
+  <mat-card-header>
+    <div class="title pb-s">{{'STEP1.TITLE' | translate}}</div>
+    <div class="subtitle pb-l">{{'STEP1.SUBTITLE' | translate}}</div>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form [formGroup]="userForm" class="form">
+      <mat-form-field appearance="outline">
+        <mat-label>{{'STEP1.NAME_LABEL' | translate}}</mat-label>
+        <input matInput required formControlName="name">
+        <mat-error *ngIf="userForm.get('name').errors">
+          {{'MAIN.DATA_IS_REQUIRED' | translate}}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>{{'STEP1.LASTNAME_LABEL' | translate}}</mat-label>
+        <input matInput required formControlName="lastname">
+        <mat-error *ngIf="userForm.get('lastname').errors">
+          {{'MAIN.DATA_IS_REQUIRED' | translate}}
+        </mat-error>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <div>
+    <button mat-flat-button class="button-next" [disabled]="checkContinueIsDisabled()">
+      {{'MAIN.CONTINUE' | translate}}
+      <img src="assets/images/next.svg" alt=next>
+    </button>
+  </div>
+ </mat-card>
+

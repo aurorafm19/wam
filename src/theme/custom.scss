@@ -1,6 +1,83 @@
-.pl-xl {
+@import 'responsive';
+@import 'components/button';
+@import 'components/card';
+
+.pt-xs {
+  padding-top: 8px;
+}
+
+.pb-xs {
+  padding-bottom: 8px;
+}
+
+.pl-xs {
+  padding-left: 8px;
+}
+
+.pr-xs {
+  padding-right: 8px;
+}
+
+.pt-s {
+  padding-top: 12px;
+}
+
+.pb-s {
+  padding-bottom: 12px;
+}
+
+.pl-s {
+  padding-left: 12px;
+}
+
+.pr-s {
+  padding-right: 12px;
+}
+
+.pt-l {
+  padding-top: 40px;
+}
+
+.pb-l {
+  padding-bottom: 40px;
+}
+
+.pl-l {
+  padding-left: 40px;
+}
+
+.pr-l {
+  padding-right: 40px;
+}
+
+.pt-xl {
+  padding-top: 54px;
+}
+
+.pb-xl {
+  padding-bottom: 54px;
+}
+
+.pl-xxl {
   padding-left: 154px
 }
-.pr-xl {
+
+.pr-xxl {
   padding-right: 154px;
+}
+
+
+[responsive-breakpoints] {
+  margin: 0 154px;
+  box-sizing: border-box;
+  padding: 0;
+
+
+  @include screen-tablet {
+    margin: 0 30px;
+
+  }
+  @include screen-mobile {
+    margin: 0;
+  }
 }

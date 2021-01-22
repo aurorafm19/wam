@@ -9,6 +9,8 @@
     },
     "FOOTER": {
       "TEXT": "2020 © We Are Marketing"
-    }
+    },
+    "DATA_IS_REQUIRED": "El campo es obligatorio",
+    "CONTINUE": "Continuar"
   }
 }

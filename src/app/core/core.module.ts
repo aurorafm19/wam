@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
@@ -6,6 +6,7 @@ import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
 export function HttpLoaderFactory(http: HttpClient) {
   return new MultiTranslateHttpLoader(http, [
     { prefix: './assets/i18n/main/', suffix: '.json' },
+    { prefix: './assets/i18n/step1/', suffix: '.json' }
   ]);
 }
 @NgModule({
