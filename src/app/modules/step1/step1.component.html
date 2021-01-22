@@ -5,7 +5,7 @@
   </mat-card-header>
 
   <mat-card-content>
-    <form [formGroup]="userForm" class="form">
+    <form [formGroup]="userForm" class="form" (ngSubmit)="onContinue()">
       <mat-form-field appearance="outline">
         <mat-label>{{'STEP1.NAME_LABEL' | translate}}</mat-label>
         <input matInput required formControlName="name">

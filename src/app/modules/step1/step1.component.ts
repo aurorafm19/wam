@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { User } from '../../core/models/user-model';
 
 @Component({
   selector: 'app-step1',
@@ -8,6 +9,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class Step1Component implements OnInit {
 
+  @Output() user = new EventEmitter<User>();
+
   userForm = new FormGroup({
     name: new FormControl('', Validators.required),
     lastname: new FormControl('', Validators.required)
@@ -15,6 +18,10 @@ export class Step1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onContinue() {
+    this.user.emit(this.userForm.value);
   }
 
   checkContinueIsDisabled() {
