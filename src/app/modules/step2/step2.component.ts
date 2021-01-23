@@ -26,9 +26,9 @@ export class Step2Component implements OnInit {
 
   onPayment() {
     this.paymentService.payment(this.user)
-    .subscribe(
-      (result) => {
-       this.PaymentResult.emit(result);
-      },() => {});
+      .subscribe(
+        (result) => {
+          this.PaymentResult.emit(result);
+        }, () => {});
   }
 }

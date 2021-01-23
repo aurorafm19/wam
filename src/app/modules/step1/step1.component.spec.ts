@@ -47,15 +47,17 @@ describe('Step1Component', () => {
   });
 
   it('submit the form', () => {
+    const formKeys = ['name', 'lastname'];
+
     expect(component.userForm.valid).toBeFalsy();
-    component.userForm.controls['name'].setValue('Peter');
-    component.userForm.controls['lastname'].setValue('Parker');
+    component.userForm.controls[formKeys[0]].setValue('Peter');
+    component.userForm.controls[formKeys[1]].setValue('Parker');
     expect(component.userForm.valid).toBeTruthy();
 
     let user = {} as User;
-    component.user.subscribe((result) => user = result);
+    component.user.subscribe((result: User) => user = result);
 
-    //trigger onContinue function
+    // trigger onContinue function
     component.onContinue();
 
     // check if the emitted value is correct

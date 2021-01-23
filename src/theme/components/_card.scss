@@ -1,31 +1,36 @@
 mat-card[custom-palette] {
   border-radius: 0;
   padding: 50px 270px 70px 270px;
+  margin-top: 50px;
+
   @include screen-tablet {
     padding: 50px 24px;
   }
+
   @include screen-mobile {
     padding: 16px;
   }
 
-  mat-card-header {
+  .header,
+  .content {
+    display: flex;
     flex-direction: column;
-    align-items: center;
 
-    .title {
-      font-style: normal;
-      font-weight: bold;
+    &__title {
       font-size: 30px;
+      font-weight: bold;
+      line-height: 42px;
     }
-    .subtitle {
-      font-weight: normal;
-      font-size: 13px;
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 300;
       text-align: center;
     }
   }
 
-  mat-card-content {
-    display: flex;
-    flex-direction: column;
+  .header {
+    align-items: center;
   }
 }

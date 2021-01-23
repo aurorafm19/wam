@@ -10,6 +10,11 @@
     "FOOTER": {
       "TEXT": "2020 © We Are Marketing"
     },
+    "STEPPER": {
+      "STEP1_LABEL": "Mis datos",
+      "STEP2_LABEL": "Pago",
+      "STEP_RESULT_LABEL": "Finalizado"
+    },
     "DATA_IS_REQUIRED": "El campo es obligatorio",
     "CONTINUE": "Continuar"
   }

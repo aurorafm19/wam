@@ -1,0 +1,49 @@
+mat-horizontal-stepper {
+  height: 80px;
+  background-color: #f5f5f5 !important;
+  align-items: center;
+
+  .mat-horizontal-header-container {
+    padding: 0 154px;
+  }
+
+  // disable nav between steps on header
+  .mat-step-header {
+    pointer-events: none;
+  }
+
+  // override icon and text styles
+  .mat-step-header .mat-step-icon-selected {
+    background-color: #3D8FCB !important;
+    color: white  !important;
+  }
+
+  .mat-step-header .mat-step-icon {
+    background-color: white;
+    border: 1px solid #3D8FCB;
+    color: #3D8FCB;
+  }
+
+  .mat-step-header .mat-step-icon-state-edit{
+    background-color: #75C900;
+    border: none;
+    color: white;
+
+  }
+
+  .mat-step-header .mat-step-label {
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 31px
+  }
+
+  .mat-step-header .mat-step-label.mat-step-label-active {
+    font-style: normal;
+    font-weight: bold;;
+    color: #37383A;
+  }
+
+  .mat-horizontal-content-container {
+    padding: 0;
+  }
+}

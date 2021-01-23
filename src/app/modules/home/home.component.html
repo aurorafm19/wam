@@ -1,10 +1,18 @@
 <div responsive-breakpoints>
-  <!-- <mat-horizontal-stepper [linear]="true">
-    <mat-step>
-      <app-step1></app-step1>
+  <mat-horizontal-stepper [linear]="true" labelPosition="bottom" #stepper>
+    <mat-step [label]="getLabelTranslate('MAIN.STEPPER.STEP1_LABEL')">
+      <app-step1 (user)="onGetUser($event)"></app-step1>
     </mat-step>
-  </mat-horizontal-stepper> -->
+    <mat-step [label]="getLabelTranslate('MAIN.STEPPER.STEP2_LABEL')">
+      <app-step2 [user]="user" (backButtonClicked)="previousStep()" (PaymentResult)="onGetPaymentResult($event)"></app-step2>
+    </mat-step>
+    <mat-step [label]="getLabelTranslate('MAIN.STEPPER.STEP_RESULT_LABEL')">
+      <app-result-ok [resultOk]="paymentResult"></app-result-ok>
+    </mat-step>
 
-  <app-step2></app-step2>
-
+    <!-- Override edit icon to done, now the user can go back and forward -->
+    <ng-template matStepperIcon="edit">
+      <mat-icon>done</mat-icon>
+    </ng-template>
+  </mat-horizontal-stepper>
 </div>

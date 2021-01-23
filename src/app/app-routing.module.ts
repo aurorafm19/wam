@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './modules/home/home.component';
+import { ResultOkComponent } from './modules/result-ok/result-ok.component';
 import { Step1Component } from './modules/step1/step1.component';
 import { Step2Component } from './modules/step2/step2.component';
 
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: 'step2',
         component: Step2Component
+      },
+      {
+        path: 'result-ok',
+        component: ResultOkComponent
       }
     ]
   },

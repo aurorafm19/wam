@@ -1,13 +1,11 @@
-import { TestBed } from '@angular/core/testing';
-
-import { PaymentService } from './payment.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { HttpClient } from '@angular/common/http';
+import { TestBed } from '@angular/core/testing';
 import { PaymentResult } from '../models/payment-result.model';
 import { User } from '../models/user-model';
+import { PaymentService } from './payment.service';
+
 
 describe('PaymentService', () => {
-  let httpClient: HttpClient;
   let httpTestingController: HttpTestingController;
   let service: PaymentService;
 
@@ -18,7 +16,7 @@ describe('PaymentService', () => {
         PaymentService
       ]
     });
-    httpTestingController = TestBed.get(HttpTestingController);
+    httpTestingController = TestBed.inject(HttpTestingController);
     service = TestBed.inject(PaymentService);
   });
 
@@ -41,9 +39,9 @@ describe('PaymentService', () => {
 
     // check if result is ok
     service.payment(user).subscribe(
-      (res: PaymentResult) => 
-      expect(res).toEqual(result)
-    )
+      (res: PaymentResult) =>
+        expect(res).toEqual(result)
+    );
 
     // check if call just once
     const req = httpTestingController.expectOne('http://www.mocky.io/v2/5e3d41272d00003f7ed95c09');
@@ -51,7 +49,7 @@ describe('PaymentService', () => {
     expect(req.request.method).toEqual('GET');
 
     req.flush(result);
-  
+
   });
 
 });

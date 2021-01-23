@@ -1,6 +1,7 @@
 @import 'responsive';
 @import 'components/button';
 @import 'components/card';
+@import 'components/stepper';
 
 .pt-xs {
   padding-top: 8px;
@@ -92,6 +93,7 @@
     margin: 0 30px;
 
   }
+
   @include screen-mobile {
     margin: 0;
   }

@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { Step1Component } from './modules/step1/step1.component';
 import { HomeComponent } from './modules/home/home.component';
 import { Step2Component } from './modules/step2/step2.component';
+import { ResultOkComponent } from './modules/result-ok/result-ok.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { Step2Component } from './modules/step2/step2.component';
     Step1Component,
     HomeComponent,
     Step2Component,
+    ResultOkComponent,
   ],
   imports: [
     BrowserModule,

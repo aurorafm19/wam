@@ -1,10 +1,10 @@
 <mat-card custom-palette>
-  <mat-card-header>
-    <div class="title pb-s">{{'STEP1.TITLE' | translate}}</div>
-    <div class="subtitle pb-l">{{'STEP1.SUBTITLE' | translate}}</div>
+  <mat-card-header class="header">
+    <div class="header__title pb-s">{{'STEP1.TITLE' | translate}}</div>
+    <div class="header__subtitle pb-l">{{'STEP1.SUBTITLE' | translate}}</div>
   </mat-card-header>
 
-  <mat-card-content>
+  <mat-card-content class="content">
     <form [formGroup]="userForm" class="form" (ngSubmit)="onContinue()">
       <mat-form-field appearance="outline">
         <mat-label>{{'STEP1.NAME_LABEL' | translate}}</mat-label>
@@ -22,13 +22,12 @@
         </mat-error>
       </mat-form-field>
     </form>
+    <div>
+      <button mat-flat-button class="button-next" [disabled]="checkContinueIsDisabled()" (click)="onContinue()">
+        {{'MAIN.CONTINUE' | translate}}
+        <img src="assets/images/next-arrow.svg" alt=next>
+      </button>
+    </div>
   </mat-card-content>
-
-  <div>
-    <button mat-flat-button class="button-next" [disabled]="checkContinueIsDisabled()">
-      {{'MAIN.CONTINUE' | translate}}
-      <img src="assets/images/next.svg" alt=next>
-    </button>
-  </div>
  </mat-card>
 

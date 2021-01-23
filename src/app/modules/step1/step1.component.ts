@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnChanges, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../../core/models/user-model';
 
@@ -8,7 +8,6 @@ import { User } from '../../core/models/user-model';
   styleUrls: ['./step1.component.scss']
 })
 export class Step1Component implements OnInit {
-
   @Output() user = new EventEmitter<User>();
 
   userForm = new FormGroup({
@@ -17,8 +16,7 @@ export class Step1Component implements OnInit {
   });
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
   onContinue() {
     this.user.emit(this.userForm.value);
@@ -27,5 +25,4 @@ export class Step1Component implements OnInit {
   checkContinueIsDisabled() {
     return this.userForm.invalid;
   }
-
 }
