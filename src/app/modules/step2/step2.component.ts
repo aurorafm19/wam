@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { PaymentResult } from '../../core/models/payment-result.model';
+import { PaymentResult } from '../../core/models/payment-result-model';
 import { User } from '../../core/models/user-model';
 import { PaymentService } from '../../core/services/payment.service';
 

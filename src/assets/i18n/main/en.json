@@ -1,0 +1,23 @@
+{
+  "MAIN": {
+    "HEADER": {
+      "HELP": "Help",
+      "SIGN_IN": "Sign_in",
+      "LAN_SELECTOR": {
+        "ES": "es",
+        "EN": "en"
+      }
+    },
+    "FOOTER": {
+      "TEXT": "2020 © We Are Marketing"
+    },
+    "STEPPER": {
+      "STEP1_LABEL": "My data",
+      "STEP2_LABEL": "Payment",
+      "STEP_RESULT_LABEL": "Finish"
+    },
+    "DATA_IS_REQUIRED": "The field is required",
+    "INVALID_CHARACTERS": "the field has invalid characters",
+    "CONTINUE": "Continue"
+  }
+}

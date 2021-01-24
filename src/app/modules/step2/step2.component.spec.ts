@@ -2,7 +2,7 @@ import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core
 import { By } from '@angular/platform-browser';
 import { of } from 'rxjs';
 import { AppModule } from '../../app.module';
-import { PaymentResult } from '../../core/models/payment-result.model';
+import { PaymentResult } from '../../core/models/payment-result-model';
 import { PaymentService } from '../../core/services/payment.service';
 
 import { Step2Component } from './step2.component';
@@ -86,6 +86,5 @@ describe('Step2Component', () => {
 
     expect(component.backButtonClicked.emit).toHaveBeenCalled();
     expect(component.backButtonClicked.emit).toHaveBeenCalledWith(true);
-
   }));
 });

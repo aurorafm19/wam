@@ -4,6 +4,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CoreModule } from '../core/core.module';
 import { MaterialModule } from './material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CoreModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   exports: [
     FooterComponent,

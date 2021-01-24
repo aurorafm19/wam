@@ -20,4 +20,13 @@
   @include screen-mobile {
     padding: 0 16px;
   }
+
+  &__label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #BDBDBD;
+    cursor: default;
+  }
 }

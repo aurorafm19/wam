@@ -1,0 +1,12 @@
+{
+  "STEP2": {
+    "TITLE": "Product payment",
+    "SUBTITLE": "Once the payment of the product has been made, you will receive an email with the details of the purchase.",
+    "CARD_SECTION": {
+      "TITLE": "Credit card",
+      "SUBTITLE": "You will be redirected to a payment platform. It is a secure process. Payment validation may take 24 hours to complete."
+    },
+    "PREVIOUS_BUTTON": "Previous",
+    "PAYMENT_BUTTON": "Payment"
+  }
+}

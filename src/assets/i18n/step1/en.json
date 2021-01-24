@@ -1,0 +1,8 @@
+{
+  "STEP1": {
+    "TITLE": "My data",
+    "SUBTITLE": "Review the data and complete those pending before continuing with the process.",
+    "NAME_LABEL": "Name",
+    "LASTNAME_LABEL": "Lastname"
+  }
+}

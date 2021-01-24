@@ -4,7 +4,8 @@
       "HELP": "Ayuda",
       "SIGN_IN": "Sign_in",
       "LAN_SELECTOR": {
-        "ES": "es"
+        "ES": "es",
+        "EN": "en"
       }
     },
     "FOOTER": {
@@ -16,6 +17,7 @@
       "STEP_RESULT_LABEL": "Finalizado"
     },
     "DATA_IS_REQUIRED": "El campo es obligatorio",
+    "INVALID_CHARACTERS": "El campo tiene caracteres no válidos",
     "CONTINUE": "Continuar"
   }
 }

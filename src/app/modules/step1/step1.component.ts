@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnChanges, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../../core/models/user-model';
+import { ValidatorNonSpecialAndNumberCharacters } from '../../core/utils/utils';
 
 @Component({
   selector: 'app-step1',
@@ -11,8 +12,8 @@ export class Step1Component implements OnInit {
   @Output() user = new EventEmitter<User>();
 
   userForm = new FormGroup({
-    name: new FormControl('', Validators.required),
-    lastname: new FormControl('', Validators.required)
+    name: new FormControl('', [Validators.required, ValidatorNonSpecialAndNumberCharacters]),
+    lastname: new FormControl('', [Validators.required, ValidatorNonSpecialAndNumberCharacters])
   });
   constructor() { }
 

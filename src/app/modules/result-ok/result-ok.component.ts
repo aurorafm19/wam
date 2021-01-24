@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PaymentResult } from '../../core/models/payment-result.model';
+import { PaymentResult } from '../../core/models/payment-result-model';
 
 @Component({
   selector: 'app-result-ok',

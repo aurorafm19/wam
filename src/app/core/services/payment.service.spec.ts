@@ -1,6 +1,6 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { PaymentResult } from '../models/payment-result.model';
+import { PaymentResult } from '../models/payment-result-model';
 import { User } from '../models/user-model';
 import { PaymentService } from './payment.service';
 
@@ -44,7 +44,7 @@ describe('PaymentService', () => {
     );
 
     // check if call just once
-    const req = httpTestingController.expectOne('http://www.mocky.io/v2/5e3d41272d00003f7ed95c09');
+    const req = httpTestingController.expectOne('https://run.mocky.io/v3/12c9eea7-cbdf-4fa1-b849-a56a57337ac2');
 
     expect(req.request.method).toEqual('GET');
 

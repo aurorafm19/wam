@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatStepper } from '@angular/material/stepper';
 import { TranslateService } from '@ngx-translate/core';
-import { PaymentResult } from '../../core/models/payment-result.model';
+import { PaymentResult } from '../../core/models/payment-result-model';
 import { User } from '../../core/models/user-model';
 
 @Component({

@@ -16,4 +16,38 @@
   @include screen-mobile {
     padding: 0 16px;
   }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    @include screen-mobile {
+      display: none;
+    }
+  }
+
+  &__single-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    & img {
+      width: 20px;
+    }
+
+    button {
+      padding: 0;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include screen-mobile {
+      display: inline;
+    }
+  }
 }

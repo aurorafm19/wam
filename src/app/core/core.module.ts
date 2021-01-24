@@ -7,7 +7,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new MultiTranslateHttpLoader(http, [
     { prefix: './assets/i18n/main/', suffix: '.json' },
     { prefix: './assets/i18n/step1/', suffix: '.json' },
-    { prefix: './assets/i18n/step2/', suffix: '.json' }
+    { prefix: './assets/i18n/step2/', suffix: '.json' },
+    { prefix: './assets/i18n/result/', suffix: '.json' }
   ]);
 }
 @NgModule({

@@ -9,16 +9,22 @@
       <mat-form-field appearance="outline">
         <mat-label>{{'STEP1.NAME_LABEL' | translate}}</mat-label>
         <input matInput required formControlName="name">
-        <mat-error *ngIf="userForm.get('name').errors">
+        <mat-error *ngIf="userForm.get('name').errors?.required">
           {{'MAIN.DATA_IS_REQUIRED' | translate}}
+        </mat-error>
+        <mat-error *ngIf="userForm.get('name').errors?.validNonSpecialAndNumberCharacter">
+          {{'MAIN.INVALID_CHARACTERS' | translate}}
         </mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>{{'STEP1.LASTNAME_LABEL' | translate}}</mat-label>
         <input matInput required formControlName="lastname">
-        <mat-error *ngIf="userForm.get('lastname').errors">
+        <mat-error *ngIf="userForm.get('lastname').errors?.required">
           {{'MAIN.DATA_IS_REQUIRED' | translate}}
+        </mat-error>
+        <mat-error *ngIf="userForm.get('lastname').errors?.validNonSpecialAndNumberCharacter">
+          {{'MAIN.INVALID_CHARACTERS' | translate}}
         </mat-error>
       </mat-form-field>
     </form>
