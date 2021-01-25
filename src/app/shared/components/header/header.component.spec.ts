@@ -3,8 +3,8 @@ import { MatSelect } from '@angular/material/select';
 import { By } from '@angular/platform-browser';
 import { AppModule } from '../../../app.module';
 import { SharedModule } from '../../shared.module';
-
 import { HeaderComponent } from './header.component';
+
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -31,15 +31,15 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // it('should set language to English', fakeAsync(() => {
+  it('should call onSetLanguage', fakeAsync(() => {
 
-  //   spyOn(component, 'onSetLanguage').and.callThrough();
+    spyOn(component, 'onSetLanguage').and.callThrough();
 
-  //   const select = fixture.debugElement.query(By.directive(MatSelect));
-  //   select.triggerEventHandler('selectionChange', 'en');
-  //   tick();
-  //   select.componentInstance.value = 'en';
-  //   expect(component.onSetLanguage).toHaveBeenCalled();
+    const select = fixture.debugElement.query(By.directive(MatSelect));
+    select.triggerEventHandler('selectionChange', 'en');
+    tick();
 
-  // }));
+    expect(component.onSetLanguage).toHaveBeenCalled();
+
+  }));
 });

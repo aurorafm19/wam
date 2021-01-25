@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
       { text: 'MAIN.HEADER.LAN_SELECTOR.ES', locale: 'es' },
       { text: 'MAIN.HEADER.LAN_SELECTOR.EN', locale: 'en' },
     ];
-    this.selectedLanguage = this.languageList.find((lan: Language) => this.trans.currentLang === lan.locale);
+    this.selectedLanguage = this.languageList.find((lan: Language) => this.trans.currentLang === lan.locale) || {text: 'MAIN.HEADER.LAN_SELECTOR.ES', locale: 'es'} as Language;
   }
 
   onSetLanguage(event) {
@@ -36,10 +36,6 @@ export class HeaderComponent implements OnInit {
       .subscribe(
         () => {},
         () => { });
-  }
-
-  onChangeLanguage() {
-    this.selectedLanguage
   }
 
   onNavToInProgress() {
