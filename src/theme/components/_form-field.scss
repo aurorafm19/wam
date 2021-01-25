@@ -1,0 +1,26 @@
+mat-form-field[custom-small] {
+  width: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  .mat-form-field-wrapper {
+    padding-bottom:10px;
+  }
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  height: 0px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick  {
+  /*change color of underline*/
+  color: #3D8FCB !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #3D8FCB !important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disable) {
+  color: #3D8FCB;
+}

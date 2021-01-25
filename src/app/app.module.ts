@@ -9,6 +9,7 @@ import { Step1Component } from './modules/step1/step1.component';
 import { HomeComponent } from './modules/home/home.component';
 import { Step2Component } from './modules/step2/step2.component';
 import { ResultOkComponent } from './modules/result-ok/result-ok.component';
+import { InProgressComponent } from './modules/in-progress/in-progress.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ResultOkComponent } from './modules/result-ok/result-ok.component';
     HomeComponent,
     Step2Component,
     ResultOkComponent,
+    InProgressComponent,
   ],
   imports: [
     BrowserModule,

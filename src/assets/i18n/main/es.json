@@ -2,11 +2,12 @@
   "MAIN": {
     "HEADER": {
       "HELP": "Ayuda",
-      "SIGN_IN": "Sign_in",
+      "SIGN_IN": "Sign in",
       "LAN_SELECTOR": {
         "ES": "es",
         "EN": "en"
-      }
+      },
+      "LANGUAGE": "Idioma"
     },
     "FOOTER": {
       "TEXT": "2020 © We Are Marketing"

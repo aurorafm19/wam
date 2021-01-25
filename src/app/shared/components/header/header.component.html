@@ -2,14 +2,14 @@
   <img src="assets/images/logo.svg" alt="wam-logo">
 
   <div class="header__buttons">
-    <div class="header__single-button">
+    <div class="header__single-button" (click)="onNavToInProgress()">
       <img src="assets/images/help.svg" alt="help">
       <button mat-flat-button>
         <div>{{ 'MAIN.HEADER.HELP' | translate}}</div>
       </button>
     </div>
 
-    <div class="header__single-button">
+    <div class="header__single-button" (click)="onNavToHome()">
       <img src="assets/images/sign_in.svg" alt="sign">
       <button mat-flat-button>
         <div>{{ 'MAIN.HEADER.SIGN_IN' | translate}}</div>
@@ -17,7 +17,7 @@
     </div>
 
     <div *ngIf="languageList">
-      <mat-form-field>
+      <mat-form-field custom-small>
         <mat-select [value]="selectedLanguage.locale" (selectionChange)="onSetLanguage($event)">
           <mat-option *ngFor="let option of languageList" [value]="option.locale">
             {{option.text | translate}}
@@ -32,14 +32,14 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item (click)="onNavToInProgress()">
         {{ 'MAIN.HEADER.HELP' | translate}}
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item (click)="onNavToHome()">
         <div>{{ 'MAIN.HEADER.SIGN_IN' | translate}}</div>
       </button>
-      <button mat-menu-item>
-        {{selectedLanguage.text | translate}}
+      <button mat-menu-item (click)="onChangeLanguage()">
+      {{ 'MAIN.HEADER.LANGUAGE' | translate}} : {{ selectedLanguage.text | translate}}
       </button>
     </mat-menu>
   </div>

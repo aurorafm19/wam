@@ -1,14 +1,14 @@
 mat-card[custom-palette] {
   border-radius: 0;
-  padding: 50px 270px 70px 270px;
+  padding: 50px 180px;
   margin-top: 50px;
 
   @include screen-tablet {
-    padding: 50px 24px;
+    padding: 50px 90px;
   }
 
   @include screen-mobile {
-    padding: 16px;
+    padding: 24px 16px;
   }
 
   .header,
@@ -17,15 +17,17 @@ mat-card[custom-palette] {
     flex-direction: column;
 
     &__title {
+      font-family: 'Raleway';
       font-size: 30px;
       font-weight: bold;
       line-height: 42px;
+      text-transform: capitalize;
     }
 
     &__subtitle {
       font-size: 16px;
       line-height: 20px;
-      font-weight: 300;
+      font-weight: normal;
       text-align: center;
     }
   }

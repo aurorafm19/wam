@@ -1,3 +1,13 @@
-mat-step {
+@import '../../../theme/responsive';
+
+mat-horizontal-stepper {
+  padding-top: 54px;
+
+  @include screen-mobile {
+    padding-top: 0;
+  }
+
+  mat-step {
     text-transform: uppercase;
+  }
 }

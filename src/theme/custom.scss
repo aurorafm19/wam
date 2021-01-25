@@ -1,23 +1,6 @@
 @import 'responsive';
-@import 'components/button';
-@import 'components/card';
-@import 'components/stepper';
+@import 'components/components.scss';
 
-.pt-xs {
-  padding-top: 8px;
-}
-
-.pb-xs {
-  padding-bottom: 8px;
-}
-
-.pl-xs {
-  padding-left: 8px;
-}
-
-.pr-xs {
-  padding-right: 8px;
-}
 
 .pt-s {
   padding-top: 12px;
@@ -65,22 +48,6 @@
 
 .pr-l {
   padding-right: 40px;
-}
-
-.pt-xl {
-  padding-top: 54px;
-}
-
-.pb-xl {
-  padding-bottom: 54px;
-}
-
-.pl-xxl {
-  padding-left: 154px
-}
-
-.pr-xxl {
-  padding-right: 154px;
 }
 
 [responsive-breakpoints] {

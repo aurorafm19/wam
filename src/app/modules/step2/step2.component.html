@@ -11,16 +11,15 @@
       <div class="content__subtitle pt-s pb-s">{{'STEP2.CARD_SECTION.SUBTITLE' | translate}}</div>
       <img src="assets/images/logo-cards.svg" alt="logos">
     </div>
+    <div class="pt-l">
+      <button mat-flat-button class="button-previous" (click)="onBack()" id="#back">
+        {{'STEP2.PREVIOUS_BUTTON' | translate}}
+        <img src="assets/images/previous-arrow.svg" alt=next>
+      </button>
+      <button mat-flat-button class="button-next" (click)="onPayment()" id="next">
+        {{'STEP2.PAYMENT_BUTTON' | translate}}
+        <img src="assets/images/next-arrow.svg" alt=next>
+      </button>
+    </div>
   </mat-card-content>
-
-  <div>
-    <button class="button-previous" (click)="onBack()" id="#back">
-      {{'STEP2.PREVIOUS_BUTTON' | translate}}
-      <img src="assets/images/previous-arrow.svg" alt=next>
-    </button>
-    <button mat-flat-button class="button-next" (click)="onPayment()" id="next">
-      {{'STEP2.PAYMENT_BUTTON' | translate}}
-      <img src="assets/images/next-arrow.svg" alt=next>
-    </button>
-  </div>
  </mat-card>

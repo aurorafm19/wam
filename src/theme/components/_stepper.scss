@@ -44,6 +44,13 @@ mat-horizontal-stepper {
   }
 
   .mat-horizontal-content-container {
-    padding: 0;
+    padding: 0 0 140px 0;
   }
+}
+
+// center horizontal-stepper
+.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container {
+  width: fit-content;
+  margin: 0 auto;
+  height: 90px;
 }
