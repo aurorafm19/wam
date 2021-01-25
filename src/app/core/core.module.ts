@@ -8,7 +8,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     { prefix: './assets/i18n/main/', suffix: '.json' },
     { prefix: './assets/i18n/step1/', suffix: '.json' },
     { prefix: './assets/i18n/step2/', suffix: '.json' },
-    { prefix: './assets/i18n/result/', suffix: '.json' }
+    { prefix: './assets/i18n/result/', suffix: '.json' },
+    { prefix: './assets/i18n/in-progress/', suffix: '.json' }
   ]);
 }
 @NgModule({

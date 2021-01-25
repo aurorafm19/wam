@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Language } from '../../../core/models/language-model';
 
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit {
 
 
   constructor(
-    private trans: TranslateService
+    private trans: TranslateService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -34,5 +36,17 @@ export class HeaderComponent implements OnInit {
       .subscribe(
         () => {},
         () => { });
+  }
+
+  onChangeLanguage() {
+    this.selectedLanguage
+  }
+
+  onNavToInProgress() {
+    this.router.navigate(['in-progress']);
+  }
+
+  onNavToHome() {
+    this.router.navigate(['home']);
   }
 }
